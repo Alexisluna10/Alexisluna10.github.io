@@ -55,9 +55,9 @@ fortnite-stats-flask/
 ## 🔐 How to Get an API Key
 
 1. Go to: [https://dash.fortnite-api.com/](https://dash.fortnite-api.com/)
-2. Log in with your Epic Games account
+2. Log in with your Discord account
 3. Create a developer account and copy your API key
-4. Replace `"YOUR_API_KEY"` in `app.py` with your personal key
+4. Replace `"YOUR_API_KEY"` in `main.py` with your personal key
 
 ---
 
