@@ -39,7 +39,7 @@ This is a web application built using **Python (Flask)** that allows users to re
 
 ```
 fortnite-stats-flask/
-├── app.py
+├── main.py
 ├── requirements.txt
 ├── README.md
 ├── static/
