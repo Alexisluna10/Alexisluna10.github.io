@@ -97,7 +97,7 @@ api = "YOUR_API_KEY"
 4. Run the application:
 
 ```bash
-python app.py
+python main.py
 ```
 
 5. Open your browser at:  
