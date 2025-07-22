@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadística</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="stats-container">
+    <div class="username">{{ datos['data']['account']['name'] }}</div>
+    <div class="stats-box">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-label">Progress</div>
+          <div class="stat-value">{{ datos['data']['battlePass']['progress'] }}</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Level</div>
+          <div class="stat-value">{{ datos['data']['battlePass']['level'] }}</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Played time</div>
+          <div class="stat-value">{{ tiempo }}</div>
+        </div>
+      </div>
+      
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-label">Kills</div>
+          <div class="stat-value">{{ datos['data']['stats']['all']['overall']['kills'] }}</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Win%</div>
+          <div class="stat-value">{{ datos['data']['stats']['all']['overall']['winRate'] }}</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Last</div>
+          <div class="stat-value">{{ datos['data']['stats']['all']['overall']['lastModified'][:10] }}</div>
+        </div>
+      </div>
+      
+      <div class="divider"></div>
+      
+      <div class="game-modes">
+        <div class="crown-icon">👑</div>
+        <div class="modes-grid">
+          <div class="mode-item">
+            <div class="mode-label">Solo</div>
+            <div class="mode-value">{{ datos['data']['stats']['all']['solo']['wins'] }}</div>
+          </div>
+          <div class="mode-item">
+            <div class="mode-label">Duo</div>
+            <div class="mode-value">{{ datos['data']['stats']['all']['duo']['wins'] }}</div>
+          </div>
+          <div class="mode-item">
+            <div class="mode-label">Squad</div>
+            <div class="mode-value">{{ datos['data']['stats']['all']['squad']['wins'] }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
