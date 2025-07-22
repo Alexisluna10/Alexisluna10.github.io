@@ -88,7 +88,7 @@ cd fortnite-stats-flask
 pip install -r requirements.txt
 ```
 
-3. Set your Fortnite API Key in `app.py`:
+3. Set your Fortnite API Key in `main.py`:
 
 ```python
 api = "YOUR_API_KEY"
@@ -136,7 +136,3 @@ pip freeze > requirements.txt
 GitHub: [https://github.com/your-username](https://github.com/Alexisluna10)
 
 ---
-
-## 📄 License
-
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
